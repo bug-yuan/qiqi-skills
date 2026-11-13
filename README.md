@@ -1,6 +1,9 @@
-# qiqi-product-knowledge
+# qiqi-product-knowledge-skills
 
 企企管理云**产品知识库检索路由与引用规范**（乐享「企企产品知识库」重构版）的 Agent Skill。
+
+> 仓库名是 `qiqi-product-knowledge-skills`，里面的技能名仍是 `qiqi-product-knowledge`
+> （`skills/qiqi-product-knowledge/`），装完之后技能目录也是 `~/.agents/skills/qiqi-product-knowledge/`。
 
 装上之后，Agent 回答产品问题时会按固定路由去乐享知识库取正文，并给出可追溯的引用
 （`条目码` + 乐享 `entry_id`），而不是凭记忆编产品行为。
@@ -23,7 +26,7 @@
 
 ```text
 请帮我安装企企管理云产品知识库检索路由 skill：
-npx --yes skills@latest add bug-yuan/qiqi-product-knowledge -g -a universal -y
+npx --yes skills@latest add bug-yuan/qiqi-product-knowledge-skills -g -a universal -y
 装完确认 ~/.agents/skills/qiqi-product-knowledge/SKILL.md 存在，并提醒我重启或刷新会话。
 ```
 
@@ -34,13 +37,13 @@ npx --yes skills@latest add bug-yuan/qiqi-product-knowledge -g -a universal -y
 
 ```bash
 # 全局安装 / 覆盖升级
-npx --yes skills@latest add bug-yuan/qiqi-product-knowledge -g -a universal -y
+npx --yes skills@latest add bug-yuan/qiqi-product-knowledge-skills -g -a universal -y
 
 # 只装到当前项目
-npx --yes skills@latest add bug-yuan/qiqi-product-knowledge -a universal -y
+npx --yes skills@latest add bug-yuan/qiqi-product-knowledge-skills -a universal -y
 
 # 先看看仓里有什么，不安装
-npx --yes skills@latest add bug-yuan/qiqi-product-knowledge --list
+npx --yes skills@latest add bug-yuan/qiqi-product-knowledge-skills --list
 ```
 
 装到哪：`-a universal` → `~/.agents/skills/qiqi-product-knowledge/`（Windows 为 `%USERPROFILE%\.agents\skills\`）。
