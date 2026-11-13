@@ -2,3 +2,6 @@ node_modules/
 .DS_Store
 Thumbs.db
 *.log
+
+# qiqi-graphql 本地环境配置（含真实 Tenant-Id，不得提交）
+env.local.json
