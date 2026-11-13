@@ -1,21 +1,39 @@
-MIT License
+内部使用许可 · Internal Use Only
+================================
 
-Copyright (c) 2026 qiqi delivery
+Copyright (c) 2026 企企管理云。保留所有权利 / All rights reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+本仓库及其全部内容（包括 skills/ 下的 SKILL.md、references/、scripts/）
+仅供企企管理云内部同事在工作中查阅、安装与使用。
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+允许的用途
+----------
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+1. 公司内部同事可通过本仓库安装与使用这些 Agent 技能（`npx skills add ...`）。
+2. 可为内部工作目的阅读、复制、修改本仓库内容，并在公司内部流转。
+3. 可在内部文档与内部分享中引用本仓库内容。
+
+限制
+----
+
+1. 不得将本仓库任何内容（含节选、修改版或衍生作品）**对外发布、公开发布、
+   上传至其他公共代码托管平台、或提供给公司以外的第三方**。
+   本仓库在 GitHub 上可见，仅为方便内部同事安装；**可见性不等于授权**。
+2. 不得基于本仓库内容制作对外的商业产品或对外服务。
+3. 不适用任何开源许可（含 MIT、Apache-2.0 等）。本仓库不是开源项目，
+   不授予任何开源许可下的权利。
+4. 未经团队负责人书面同意，不得对外分发、再许可（sublicense）或转让本内容。
+
+关于仓库内容
+------------
+
+- 本仓库**不含客户名称、真实 Tenant-Id、内网 IP 或客户自定义对象**，
+  相关环境配置须由使用者本地填写（见 `.gitignore` 中的 `env.local.json`）。
+- 仓库中的技术结论（接口行为、字段通道、参数契约、排查方法等）来自实测，
+  属内部技术积累，适用上述限制。
+
+免责
+----
+
+本内容按「现状」提供，不构成产品行为承诺。产品定义以乐享「企企产品知识库」为准，
+租户事实以 `qiqi` CLI 实测为准。
